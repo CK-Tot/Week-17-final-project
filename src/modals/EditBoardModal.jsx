@@ -90,7 +90,7 @@ function EditBoardModal({ setIsBoardModalOpen, type }) {
           </label>
           <input
             className="bg-transparent px-4 py-2 rounded-md text-sm border-[0.5px] border-gray-600 focus:outline-[#635fc7]"
-            placeholder="e.g., Web Design"
+            placeholder="e.g., BootCamp Course"
             value={name}
             onChange={(e) => setName(e.target.value)}
             id="board-name-input"

@@ -1,4 +1,4 @@
-// Import necessary libraries and assets
+// Importing necessary libraries and assets
 import React, { useState } from "react";
 import iconDown from "../assets/icon-chevron-down.svg";
 import iconUp from "../assets/icon-chevron-up.svg";
@@ -9,7 +9,7 @@ import EditTaskModal from "../modals/EditTaskModal";
 import EditBoardModal from "../modals/EditBoardModal";
 import { useDispatch, useSelector } from "react-redux";
 import DeleteModal from "../modals/DeleteModal";
-import boardsSlice from "../redux/boardsSlice";
+import { deleteBoard, setBoardActive } from "../redux/boardsSlice"; // Updated import for specific actions
 
 // NavBar component: Renders the application's main header
 function NavBar({ setIsBoardModalOpen, isBoardModalOpen }) {
@@ -45,8 +45,8 @@ function NavBar({ setIsBoardModalOpen, isBoardModalOpen }) {
   // Handles the delete board action
   const onDeleteBtnClick = (e) => {
     if (e.target.textContent === "Delete") {
-      dispatch(boardsSlice.actions.deleteBoard());
-      dispatch(boardsSlice.actions.setBoardActive({ index: 0 }));
+      dispatch(deleteBoard());
+      dispatch(setBoardActive({ index: 0 }));
       setIsDeleteModalOpen(false);
     } else {
       setIsDeleteModalOpen(false);
@@ -66,7 +66,7 @@ function NavBar({ setIsBoardModalOpen, isBoardModalOpen }) {
           </h3>
           <div className="flex items-center">
             <h3 className="truncate max-w-[200px] md:text-2xl text-xl font-bold md:ml-20 font-sans">
-              {board.name}
+              {board ? board.name : "Select a Board"}
             </h3>
             <img
               src={openDropdown ? iconUp : iconDown}
@@ -85,7 +85,7 @@ function NavBar({ setIsBoardModalOpen, isBoardModalOpen }) {
               setIsTaskModalOpen((prevState) => !prevState);
             }}
           >
-            + Add New Task
+            Add New Task
           </button>
           <button
             onClick={() => {
@@ -148,7 +148,7 @@ function NavBar({ setIsBoardModalOpen, isBoardModalOpen }) {
         <DeleteModal
           setIsDeleteModalOpen={setIsDeleteModalOpen}
           type="board"
-          title={board.name}
+          title={board ? board.name : ""}
           onDeleteBtnClick={onDeleteBtnClick}
         />
       )}
