@@ -1,0 +1,350 @@
+{
+  "boards": [
+    {
+      "name": "Task Manager Development",
+      "isActive": true,
+      "columns": [
+        {
+          "name": "Todo",
+          "tasks": [
+            {
+              "title": "Setup Project with Vite and Tailwind",
+              "description": "Initialize the project with Vite and set up Tailwind for styling.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Install Vite",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Install Tailwind CSS",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Configure Tailwind with Vite",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Create Task Components",
+              "description": "Develop reusable components for tasks, columns, and boards.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Task card component",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Column component",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Board component",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Implement API Integration",
+              "description": "Connect the application to MockAPI to fetch and manage tasks data.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Create API endpoints on MockAPI",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Fetch tasks from API",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Add CRUD functionality",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doing",
+          "tasks": [
+            {
+              "title": "Develop Task Manager UI",
+              "description": "Build the layout and user interface for the task manager.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Sidebar with board list",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Columns for task statuses",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Add New Task button",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Configure Routing with React Router",
+              "description": "Set up routing to navigate between boards and specific tasks.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Add board routes",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Add task routes within boards",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Done",
+          "tasks": [
+            {
+              "title": "Create Mock Data Structure",
+              "description": "Design a JSON structure to represent boards, columns, and tasks for the task manager.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Define board structure",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Define column and task structures",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Set Up MockAPI Project",
+              "description": "Configure MockAPI with the required resources for tasks, columns, and boards.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Create boards resource",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Create columns resource",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Create tasks resource",
+                  "isCompleted": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Job Search",
+      "isActive": false,
+      "columns": [
+        {
+          "name": "Todo",
+          "tasks": [
+            {
+              "title": "Update Resume",
+              "description": "Revise and format resume to highlight relevant skills and projects.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Add recent projects",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Highlight skills in React and API integration",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Format for readability",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Build Portfolio Website",
+              "description": "Create a personal website to showcase projects and skills.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Set up hosting and domain",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Add portfolio projects",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Include a contact form",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Apply for Jobs",
+              "description": "Start applying to entry-level front-end and software engineering positions.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Create LinkedIn job alerts",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Apply to at least 10 jobs weekly",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doing",
+          "tasks": [
+            {
+              "title": "Network with Industry Professionals",
+              "description": "Reach out to industry contacts and attend networking events.",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Attend virtual job fairs",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Connect with professionals on LinkedIn",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Done",
+          "tasks": [
+            {
+              "title": "Complete LinkedIn Profile",
+              "description": "Optimize LinkedIn profile for job search.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Add recent job experience",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Highlight skills and certifications",
+                  "isCompleted": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Product Enhancements",
+      "isActive": false,
+      "columns": [
+        {
+          "name": "Now",
+          "tasks": [
+            {
+              "title": "Implement Task Dependencies",
+              "description": "Allow users to set dependencies between tasks for better project management.",
+              "status": "Now",
+              "subtasks": [
+                {
+                  "title": "Design dependency UI",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Implement backend support",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Add Due Dates and Reminders",
+              "description": "Enable users to set due dates and receive reminders for tasks.",
+              "status": "Now",
+              "subtasks": [
+                {
+                  "title": "UI for due date input",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Notification system for reminders",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Next",
+          "tasks": [
+            {
+              "title": "Mobile Responsiveness",
+              "description": "Ensure the app works well on mobile devices.",
+              "status": "Next",
+              "subtasks": [
+                {
+                  "title": "Optimize layout for small screens",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Test on various mobile devices",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Later",
+          "tasks": [
+            {
+              "title": "Add Dark Mode",
+              "description": "Provide a dark mode option for better accessibility.",
+              "status": "Later",
+              "subtasks": [
+                {
+                  "title": "Design dark theme",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Implement toggle feature",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Introduce Collaborative Features",
+              "description": "Allow multiple users to collaborate on the same project.",
+              "status": "Later",
+              "subtasks": [
+                {
+                  "title": "Define roles and permissions",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Enable real-time updates",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
